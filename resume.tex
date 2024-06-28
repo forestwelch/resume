@@ -24,6 +24,10 @@
     \hspace*{-18pt} \textcolor{deeppurple}{\hrulefill} \\
 }
 
+% Adjust list parameters for itemize environment
+\addtolength{\leftmargini}{-1em}
+\addtolength{\leftmarginii}{-1em}
+
 \begin{document}
 \vspace{-40pt}
 
@@ -50,8 +54,8 @@ Fullstack Engineering Certificate \hfill 2018\\
 \textbf{BuildVision} \hfill San Francisco, CA\\
 \textit{Software Engineer (Contract)} \hfill November 2023 - April 2024\\
 \vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-    \item Spearheaded UI development for admin tools and user-facing views using Next.js and React as BuildVision's second engineer.
+\begin{itemize} \itemsep .5pt
+    \item Spearheaded Next.js UI development for admin tools and customer views as BuildVision's second engineer.
     \item Leveraged RTK Query's cache tags to optimize data management and API interactions, building reusable Table and Pagination components with result caching, search filters, and inline editing.
     \item Established a comprehensive design system using NextUI, creating reusable components and standardizing styles, such as a file folder viewer with recursive nesting and state management.
 \end{itemize}
@@ -59,25 +63,25 @@ Fullstack Engineering Certificate \hfill 2018\\
 \textbf{Autodesk (Formerly BuildingConnected)} \hfill San Francisco, CA\\
 \textit{Software Engineer} \hfill August 2018 - January 2022\\
 \vspace{-1mm}
-\begin{itemize} \itemsep 1pt
+\begin{itemize} \itemsep .5pt
     \item Authored an org-wide React UI component library, reducing library size by \textasciitilde{}30\% and doubling functionality.
-    \begin{itemize} \itemsep 1pt
+    \begin{itemize} \itemsep .5pt
         \item Unified disparate component libraries and JSS-in-CSS with styled-components to simplify UI development.
         \item Developed common components including action menus, tables, and flyouts.
         \item Documented props, and usage, and design principles, accessible at \href{https://design.buildingconnected.com/}{\underline{design.buildingconnected.com}}.
         \end{itemize}
     \item Led a localization and internationalization initiative, doubling the user base by expanding into Oceania.
-    \begin{itemize} \itemsep 1pt
+    \begin{itemize} \itemsep .5pt
             \item Implemented a centralized translation system using react-i18next, with hierarchical locale determination using user settings, browser language, HTTP headers, and geolocation.
-            \item Injected locale information into server-side HTML templates for sub-apps like email and printer services, ensuring consistent localization.  
+            \item Injected locale into server-side HTML templates for email and printer services, ensuring consistent localization.  
         \end{itemize}
-    \item Rebuilt internal tools, saving the Customer Success team 20 hours per week.
-    \begin{itemize} \itemsep 1pt
-            \item Converted UI from Angular to React for better performance, adding enhanced search and company merging features.
+    \item Rebuilt internal tools from the ground up, saving the Customer Success team 20 hours per week.
+    \begin{itemize} \itemsep .5pt
+            \item Converted UI from Angular to React for better performance and added enhanced search and company merging.
             \item Fixed a critical date picker bug, saving several million dollars by preventing contract expiration issues.
         \end{itemize}
     \item Led the estimated cost feature development, empowering contractors' decisions (used >5000 times weekly).
-    \begin{itemize} \itemsep 1pt
+    \begin{itemize} \itemsep .5pt
             \item Crafted a comprehensive design document detailing approaches, requirements, and implementation plans.
             \item Developed a reusable EstimatedCost component with Redux for real-time updates and implemented memoization with reselect for performance optimization.  
         \end{itemize}
