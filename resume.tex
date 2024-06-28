@@ -1,0 +1,97 @@
+\pdfcompresslevel=0
+\pdfobjcompresslevel=0
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=0.5in,right=0.5in,bottom=0.5in,top=0.5in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+
+\definecolor{deeppurple}{RGB}{102, 0, 153}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{3pt} \textcolor{deeppurple}{\textsc{#1}}}
+    \vspace*{-12pt} \\
+    \hspace*{-18pt} \textcolor{deeppurple}{\hrulefill} \\
+}
+
+\begin{document}
+\vspace{-40pt}
+
+%==== Profile ====%
+\begin{center}
+    {\fontsize{36}{36}\selectfont \textcolor{deeppurple}{Forest Welch}} \\ % Adjusted font size and color
+    \vspace{10pt} % Add space between name and contact info
+    \small San Francisco, CA $\cdot$ \href{mailto:forest.r.welch@gmail.com}{\underline{forest.r.welch@gmail.com}} $\cdot$ (415) 375-5162 $\cdot$ \href{https://linkedin.com/in/forestrwelch}{\underline{linkedin.com/in/forestrwelch}} $\cdot$ \href{https://github.com/nwelchr}{\underline{github.com/nwelchr}} % Reduced font size for contact information
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Pennsylvania}\hfill Philadelphia, PA\\
+B.A. in Linguistics, minor in Deaf Studies \hfill 2012 - 2016\\
+\vspace{2mm}
+\textbf{App Academy}\hfill San Francisco, CA\\
+Fullstack Engineering Certificate \hfill 2018\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{BuildVision} \hfill San Francisco, CA\\
+\textit{Software Engineer (Contract)} \hfill November 2023 - April 2024\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Spearheaded UI development for admin tools and user-facing views using Next.js and React as BuildVision's second engineer.
+    \item Leveraged RTK Query's cache tags to optimize data management and API interactions, building reusable Table and Pagination components with result caching, search filters, and inline editing.
+    \item Established a comprehensive design system using NextUI, creating reusable components and standardizing styles, such as a file folder viewer with recursive nesting and state management.
+\end{itemize}
+
+\textbf{Autodesk (Formerly BuildingConnected)} \hfill San Francisco, CA\\
+\textit{Software Engineer} \hfill August 2018 - January 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Authored an org-wide React UI component library, reducing library size by \textasciitilde{}30\% and doubling functionality.
+    \begin{itemize} \itemsep 1pt
+        \item Unified disparate component libraries and JSS-in-CSS with styled-components to simplify UI development.
+        \item Developed common components including action menus, tables, and flyouts.
+        \item Documented props, and usage, and design principles, accessible at \href{https://design.buildingconnected.com/}{\underline{design.buildingconnected.com}}.
+        \end{itemize}
+    \item Led a localization and internationalization initiative, doubling the user base by expanding into Oceania.
+    \begin{itemize} \itemsep 1pt
+            \item Implemented a centralized translation system using react-i18next, with hierarchical locale determination using user settings, browser language, HTTP headers, and geolocation.
+            \item Injected locale information into server-side HTML templates for sub-apps like email and printer services, ensuring consistent localization.  
+        \end{itemize}
+    \item Rebuilt internal tools, saving the Customer Success team 20 hours per week.
+    \begin{itemize} \itemsep 1pt
+            \item Converted UI from Angular to React for better performance, adding enhanced search and company merging features.
+            \item Fixed a critical date picker bug, saving several million dollars by preventing contract expiration issues.
+        \end{itemize}
+    \item Led the estimated cost feature development, empowering contractors' decisions (used >5000 times weekly).
+    \begin{itemize} \itemsep 1pt
+            \item Crafted a comprehensive design document detailing approaches, requirements, and implementation plans.
+            \item Developed a reusable EstimatedCost component with Redux for real-time updates and implemented memoization with reselect for performance optimization.  
+        \end{itemize}
+    \item Mentored two entry-level engineers and an intern, providing structured onboarding sessions, conducting pair programming, and offering detailed, constructive feedback during PR reviews.
+    \item Improved team morale and mitigated burnout during COVID by organizing and hosting bi-weekly yoga and meditation Zoom calls, along with weekly pair programming and gaming sessions.
+    \item Managed the frontend interview process, conducting interviews and assisting candidates during onsites. Key contributor to the successful hire of 5 engineers and 2 interns, and launched our first satellite office in Toronto.
+\end{itemize}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l p{5.2in} }
+    \textbf{Proficient:} & JavaScript, React, Next.js, Redux, Node.js, MongoDB, Git, CircleCI \\
+    \textbf{Familiar:}   & Typescript, React Native, Angular, PostgreSQL, Docker, Heroku, AWS, Elastic Cloud, Redis, Mongoose, GraphQL, Jest, Cypress, Ruby on Rails, Webpack, jQuery \\
+\end{tabular}
+
+\end{document}
