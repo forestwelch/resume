@@ -8,9 +8,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[left=0.5in,right=0.5in,bottom=0.5in,top=0.5in]{geometry}
+\usepackage[left=0.7in,right=0.7in,bottom=0.7in,top=0.8in]{geometry}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \textheight=10in
 \pagestyle{empty}
@@ -33,26 +34,36 @@
 
 %==== Profile ====%
 \begin{center}
-    {\fontsize{36}{36}\selectfont \textcolor{deeppurple}{Forest Welch}} \\ % Adjusted font size and color
+    \begin{minipage}{\textwidth}
+        \centering
+        {\fontsize{36}{36}\selectfont \textcolor{deeppurple}{Forest Welch}}
+        \hspace{0.3cm}
+        \raisebox{-0.2cm}{\href{https://forestsworld.me/}{\includegraphics[height=1.3cm]{logo.png}}} % Adjusted font size and logo size
+    \end{minipage}
+    \\ % Adjusted font size and color
     \vspace{10pt} % Add space between name and contact info
-    \small San Francisco, CA $\cdot$ \href{mailto:forest.r.welch@gmail.com}{\underline{forest.r.welch@gmail.com}} $\cdot$ (415) 375-5162 $\cdot$ \href{https://linkedin.com/in/forestrwelch}{\underline{LinkedIn}} $\cdot$ \href{https://github.com/nwelchr}{\underline{Github}}
-\end{center}
-
-\begin{center}
-    Fullstack Software Developer with 4+ years of experience driving impactful solutions and enhancing operational efficiency and user experiences. I thrive in environments where customer-centric engineering drives decisions. At Middesk, I am eager to leverage my technical expertise to solve complex problems for customers and create solutions that meet regulatory compliance and commercial credit needs.
+    \small San Francisco, CA $\cdot$ \href{mailto:forest.r.welch@gmail.com}{\underline{forest.r.welch@gmail.com}} $\cdot$ (415) 375-5162 $\cdot$ \href{https://linkedin.com/in/forestrwelch}{\underline{LinkedIn}} $\cdot$ \href{https://github.com/nwelchr}{\underline{Github}} $\cdot$ \href{https://forestsworld.me/}{\underline{forestsworld.me}}
 \end{center}
 
 %==== Experience ====%
 \header{Experience}
 \vspace{1mm}
 
+\textbf{Self-Employed} \hfill San Francisco, CA\\
+\textit{Various} \hfill March 2024 - August 2024\\
+\vspace{-1mm}
+\begin{itemize} \itemsep .5pt
+    \item Enhancing SEO, UX, and page load times for small business websites using React and Next.js.
+    \item Providing career guidance and mock interviews for full-stack development bootcamp graduates.
+    \item Developed an esports bracket management tool for self-service score reporting and event streamlining.
+\end{itemize}
+
 \textbf{BuildVision} \hfill San Francisco, CA\\
 \textit{Software Engineer (Contract)} \hfill November 2023 - April 2024\\
 \vspace{-1mm}
 \begin{itemize} \itemsep .5pt
-    \item Spearheaded Next.js development for admin tools and customer views as BuildVision's second developer.
-    \item Optimized data management and API interactions using RTK Query's cache tags, enhancing features like result caching, search filters, and inline editing.
-    \item Created a comprehensive design system with NextUI, ensuring consistency and scalability across projects.
+    \item Led Next.js development for admin and customer tools, improving UI performance and user satisfaction.
+    \item Optimized data management and API interactions using RTK Query, adding result caching, search filters, and inline editing.
 \end{itemize}
 
 \textbf{Autodesk (Formerly BuildingConnected)} \hfill San Francisco, CA\\
@@ -68,24 +79,19 @@
     \item Directed a localization and internationalization initiative, expanding into Oceania and doubling the user base.
     \begin{itemize} \itemsep .5pt
         \item Implemented a centralized translation system using react-i18next, ensuring consistent localization.
-        \item Injected locale into server-side HTML templates for email and printer services for comprehensive localization.
+        \item Injected locale into HTML templates for emails and printing, ensuring localization across all apps.
     \end{itemize}
     \item Rebuilt internal tools from the ground up, saving the Customer Success team 20 hours per week.
     \begin{itemize} \itemsep .5pt
-        \item Converted UI from Angular to React for better performance, adding enhanced search and company merging.
-        \item Fixed a critical date picker bug, preventing contract expiration issues and saving millions of dollars.
-    \end{itemize}
-    \item Managed the estimated cost feature initiative to empower contractors' decisions (used >5000 times weekly).
-    \begin{itemize} \itemsep .5pt
-        \item Crafted a comprehensive design document detailing approaches, requirements, and implementation plans.
-        \item Built reusable EstimatedCost component and memoized calculations with Redux's reselect for performance.
+        \item Migrated UI from Angular to React, boosting performance and adding search and merging features.
+        \item Fixed critical date picker issue, ensuring contract compliance and protecting \$1.5M in revenue.
     \end{itemize}
     \item Built a UserEvents tracking system, piping data to Snowflake for metrics via Mode Analytics.
-    \item Conducted A/B testing with LaunchDarkly flags to optimize the onboarding flow, increasing successful sign ups.
+    \item Conducted A/B testing with LaunchDarkly flags to refine onboarding, resulting in increased sign-ups.
     \item Streamlined the frontend CircleCI pipeline, reducing build and deployment times by 50\%.
     \item Managed the frontend interview process, contributing to the successful hire of 5 engineers and 2 interns.
-    \item Mentored two entry-level team members and an intern, providing structured onboarding and constructive feedback.
-    \item Facilitated well-being initiatives during COVID-19, organizing yoga, meditation, and pair programming sessions.
+    \item Mentored two entry-level engineers and an intern, providing onboarding guidance and constructive feedback.
+    \item Organized pair programming sessions, as well as yoga and meditation activities, over COVID-19.
 \end{itemize}
 
 %==== Education ====%
