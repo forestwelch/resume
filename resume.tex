@@ -8,7 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[left=0.7in,right=0.7in,bottom=0.7in,top=0.8in]{geometry}
+\usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -25,7 +25,6 @@
     \hspace*{-18pt} \textcolor{deeppurple}{\hrulefill} \\
 }
 
-% Adjust list parameters for itemize environment
 \addtolength{\leftmargini}{-1em}
 \addtolength{\leftmarginii}{-1em}
 
@@ -38,11 +37,15 @@
         \centering
         {\fontsize{36}{36}\selectfont \textcolor{deeppurple}{Forest Welch}}
         \hspace{0.3cm}
-        \raisebox{-0.2cm}{\href{https://forestsworld.me/}{\includegraphics[height=1.3cm]{logo.png}}} % Adjusted font size and logo size
+        \raisebox{-0.2cm}{\href{https://forestsworld.me/}{\includegraphics[height=1.3cm]{logo.png}}} 
     \end{minipage}
-    \\ % Adjusted font size and color
-    \vspace{10pt} % Add space between name and contact info
+    \\ 
+    \vspace{10pt}
     \small San Francisco, CA $\cdot$ \href{mailto:forest.r.welch@gmail.com}{\underline{forest.r.welch@gmail.com}} $\cdot$ (415) 375-5162 $\cdot$ \href{https://linkedin.com/in/forestrwelch}{\underline{LinkedIn}} $\cdot$ \href{https://github.com/nwelchr}{\underline{Github}} $\cdot$ \href{https://forestsworld.me/}{\underline{forestsworld.me}}
+\end{center}
+
+\begin{center}
+    Frontend-leaning Software Engineer passionate about building intuitive, impactful applications. With 4+ years of experience, I blend technical expertise with mission-driven collaboration. Known for clear communication and a commitment to team success, I strive to work on meaningful projects that emphasize empathy and connection, helping teams deliver seamless and user-centered solutions.
 \end{center}
 
 %==== Experience ====%
@@ -55,43 +58,29 @@
 \begin{itemize} \itemsep .5pt
     \item Enhancing SEO, UX, and page load times for small business websites using React and Next.js.
     \item Providing career guidance and mock interviews for full-stack development bootcamp graduates.
-    \item Developed an esports bracket management tool for self-service score reporting and event streamlining.
+    \item Built an esports bracket management tool to streamline events with automated score reporting.
 \end{itemize}
 
 \textbf{BuildVision} \hfill San Francisco, CA\\
 \textit{Software Engineer (Contract)} \hfill November 2023 - April 2024\\
 \vspace{-1mm}
 \begin{itemize} \itemsep .5pt
-    \item Led Next.js development for admin and customer tools, improving UI performance and user satisfaction.
-    \item Optimized data management and API interactions using RTK Query, adding result caching, search filters, and inline editing.
+    \item Led the initial development of app views, transitioning from a basic Airtable setup to a database-driven system, and building the foundation for admin and customer tools with Next.js.
+    \item Optimized data management and API interactions using RTK Query, improving UI performance with result caching, search filters, and inline editing.
 \end{itemize}
+
+
 
 \textbf{Autodesk (Formerly BuildingConnected)} \hfill San Francisco, CA\\
 \textit{Software Engineer} \hfill August 2018 - January 2022\\
 \vspace{-1mm}
 \begin{itemize} \itemsep .5pt
-    \item Authored an org-wide React component library, reducing library size by \textasciitilde{}30\% and doubling functionality.
-    \begin{itemize} \itemsep .5pt
-        \item Unified disparate component libraries and JSS-in-CSS with styled-components, simplifying UI development.
-        \item Engineered common components including action menus, tables, and flyouts.
-        \item Documented props, usage, and design principles, accessible at \href{https://design.buildingconnected.com/}{\underline{design.buildingconnected.com}}.
-    \end{itemize}
-    \item Directed a localization and internationalization initiative, expanding into Oceania and doubling the user base.
-    \begin{itemize} \itemsep .5pt
-        \item Implemented a centralized translation system using react-i18next, ensuring consistent localization.
-        \item Injected locale into HTML templates for emails and printing, ensuring localization across all apps.
-    \end{itemize}
-    \item Rebuilt internal tools from the ground up, saving the Customer Success team 20 hours per week.
-    \begin{itemize} \itemsep .5pt
-        \item Migrated UI from Angular to React, boosting performance and adding search and merging features.
-        \item Fixed critical date picker issue, ensuring contract compliance and protecting \$1.5M in revenue.
-    \end{itemize}
-    \item Built a UserEvents tracking system, piping data to Snowflake for metrics via Mode Analytics.
-    \item Conducted A/B testing with LaunchDarkly flags to refine onboarding, resulting in increased sign-ups.
+    \item Directed a localization and internationalization initiative, expanding into Oceania and doubling the user base. Implemented a centralized translation system using react-i18next, ensuring consistent localization across all apps and services.
+    \item Authored an org-wide React component library, reducing previous library size by \textasciitilde{}30\% while doubling functionality. Unified disparate component libraries with styled-components and documented props, usage, and design principles at \href{https://design.buildingconnected.com/}{\underline{design.buildingconnected.com}}.
+    \item Rebuilt internal tools from the ground up and migrated UI from Angular to React, saving the Customer Success team 20 hours per week. Fixed critical date picker issues, ensuring contract compliance and protecting \$1.5M in revenue.
+    \item Built a UserEvents tracking system and conducted A/B testing with LaunchDarkly, improving customer onboarding and product metrics via Mode Analytics.
     \item Streamlined the frontend CircleCI pipeline, reducing build and deployment times by 50\%.
-    \item Managed the frontend interview process, contributing to the successful hire of 5 engineers and 2 interns.
-    \item Mentored two entry-level engineers and an intern, providing onboarding guidance and constructive feedback.
-    \item Organized pair programming sessions, as well as yoga and meditation activities, over COVID-19.
+    \item Managed the frontend interview process, mentored new hires, and organized pair programming and wellness activities during COVID-19.
 \end{itemize}
 
 %==== Education ====%
@@ -106,8 +95,8 @@
 %==== Skills ====%
 \header{Skills}
 \vspace{1mm}
-\begin{tabular}{ l p{6in} }
-    \hspace{-0.08in}\textbf{Proficient:} & JavaScript, React, Next.js, Redux, Node.js, MongoDB, Git, CircleCI, LaunchDarkly, Mode Analytics  \\
+\begin{tabular}{ l p{5.4in} }
+    \hspace{-0.08in}\textbf{Proficient:} & JavaScript, React, Next.js, Redux, Node.js, MongoDB, Git, CircleCI, LaunchDarkly \\
     \hspace{-0.08in}\textbf{Familiar:}   & TypeScript, React Native, Angular, PostgreSQL, Docker, Heroku, AWS, Elastic Cloud, Snowflake, Redis, Mongoose, GraphQL, Jest, Cypress, Ruby on Rails, Webpack, jQuery \\
 \end{tabular}
 
