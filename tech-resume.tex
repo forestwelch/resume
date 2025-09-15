@@ -1,0 +1,147 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[left=0.85in,right=0.85in,bottom=0.85in,top=0.85in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fontawesome}
+\hypersetup{
+    pdfstartview=Fit,
+    pdfnewwindow=true,
+    colorlinks=true,
+    linkcolor=secondary,
+    urlcolor=secondary
+}
+
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+
+\definecolor{primary}{RGB}{0, 80, 80}
+\definecolor{secondary}{RGB}{0, 60, 60}
+\definecolor{tertiary}{RGB}{40, 60, 60}
+\definecolor{default}{RGB}{0, 20, 20}
+
+\color{default}
+
+\renewcommand{\small}{\fontsize{9.5}{12}\selectfont\itshape}
+
+\newcommand{\header}[1]{
+    {\hspace*{-18pt}\vspace*{3pt} \textcolor{primary}{\textsc{#1}}}
+    \vspace*{-12pt} \\
+    \hspace*{-18pt} \textcolor{primary}{\hrulefill} \\
+}
+
+\addtolength{\leftmargini}{-1em}
+\addtolength{\leftmarginii}{-1em}
+
+\begin{document}
+
+%==== Profile ====%
+\begin{multicols}{2}
+\columnbreak
+
+%==== Profile ====%
+\begin{minipage}{\textwidth}
+    {\fontsize{36}{36}\selectfont\textcolor{primary}{Forest Welch}}
+    \hspace{0.3cm}
+    \raisebox{-0.2cm}{\href{https://forestsworld.me/}{\includegraphics[height=1.3cm]{logo.png}}} 
+\end{minipage}
+
+{\fontsize{12}{12}\selectfont\textcolor{secondary}{Technology Advisor \& Software Engineer}}
+\columnbreak
+
+% Right Column
+\vspace{12mm} % Adjust for vertical positioning
+\hspace*{30mm} % Adjust for horizontal positioning
+\begin{minipage}[t]{0.4\textwidth}
+\raggedright
+\vspace{2mm}
+\href{https://forestsworld.me/}{forestsworld.me}\\
+\href{mailto:forest.r.welch@gmail.com}{forest.r.welch@gmail.com}\\
+\href{https://linkedin.com/in/forestrwelch}{linkedin.com/in/forestrwelch}
+\end{minipage}
+\end{multicols}
+
+Collaborative engineer experienced in delivering technical solutions within inclusive, customer-focused teams and translating complex concepts for diverse audiences. Eager to leverage my technical background and interpersonal skills in more human-centered roles.
+\vspace{4mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Rula Health} \textcolor{tertiary}{{\small{Software Engineer}}} \hfill \textcolor{tertiary}{2025 – Present}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Contributed to the launch of in-person appointment booking. Helped grow access to care by improving the patient onboarding funnel (+7\% exposure to hold rate).
+    \item Assisted engineers with dev environment setup, streamlining onboarding.
+    \item Improved booking UI components, such as embedded maps and session format selection.
+\end{itemize}
+
+\textbf{BuildVision} \textcolor{tertiary}{{\small{Software Engineer}}} \hfill \textcolor{tertiary}{2023 – 2024}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Built v1 of the platform as one of the first engineers, enabling the company to secure pre-seed funding.
+    \item Designed internal tools that streamlined data entry and saved leadership 10+ hours per week.
+    \item Collaborated closely with product and design to ensure new features met customer expectations.
+\end{itemize}
+
+\textbf{Autodesk} \textcolor{tertiary}{{\small{Senior Software Engineer I}}} \hfill \textcolor{tertiary}{2020 – 2022}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Led an org-wide localization initiative, doubling the product’s user base and expanding access worldwide.
+    \item Increased customer registration success rate by 15\% by A/B testing the modifying the onboarding flow.
+    \item Supported peers by creating workshops and documentation to ensure smooth adoption of new systems.
+\end{itemize}
+
+\textbf{BuildingConnected} \textcolor{tertiary}{{\small{Software Engineer II}}} \hfill \textcolor{tertiary}{2018 – 2020}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Improved internal tools to save 20+ staff hours per week and protecting \$1.5M in contracts.
+    \item Created and maintained component libraries that simplified developer experience. (design.buildingconnected.com/)
+    \item Delivered a new cost estimation feature used thousands of times weekly by construction professionals.
+\end{itemize}
+
+\textbf{App Academy} \textcolor{tertiary}{{\small{Software Development Instructor}}} \hfill \textcolor{tertiary}{2018}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Mentored 12 students through projects, code reviews, and mock interviews, helping them build confidence with new technologies.
+    \item Several mentees were hired at companies including Adobe, Oracle, and eBay.
+\end{itemize}
+
+\textbf{Language Instructor (Self-Employed)} \hfill \textcolor{tertiary}{2015 – 2018}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Designed and taught 1,000+ private ASL, English, and French lessons with a 99\% student approval rate.
+    \item Adapted lesson structures to meet the cultural and linguistic needs of diverse learners.
+    \item Volunteered internationally in multilingual environments, organizing events and providing translation and interpretation in Japan, Taiwan, India, Thailand, and Malaysia.
+\end{itemize}
+
+\textbf{Penn Computing, University of Pennsylvania} \textcolor{tertiary}{{\small{Technology Advisor \& Webmaster}}} \hfill \textcolor{tertiary}{2012 – 2015}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep .5pt
+    \item Assisted staff and students with hardware and software troubleshooting, including network setup, custom computer builds, and security tooling.
+    \item Helped relocate and reorganize Van Pelt Library’s electronic catalog storage system.
+    \item Updated and maintained the Penn Computing website with new HTML/CSS features.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{App Academy} \textcolor{tertiary}{{\small{Fullstack Engineering}}} \hfill \textcolor{tertiary}{2018}\\
+\vspace{2mm}
+\textbf{University of Pennsylvania} \textcolor{tertiary}{{\small{B.A. in Linguistics, Deaf Studies}}} \hfill \textcolor{tertiary}{2012 – 2016}\\
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l p{5.4in} }
+    \hspace{-0.08in}\textbf{Customer Service:} & Technical troubleshooting, teaching, cultural exchange, accessibility \\
+    \hspace{-0.08in}\textbf{Technical:} & macOS, iOS, Windows, HTML/CSS, JavaScript, React, Next.js \\
+    \hspace{-0.08in}\textbf{Languages:} & American Sign Language, French, Portuguese, Spanish, Japanese \\
+\end{tabular}
+
+\end{document}
